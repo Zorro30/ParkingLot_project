@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parking Lot example</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="{{ url_for('static', filename='form.js') }}"></script>
+<style>
+	body{
+		background-color: lightcyan;
+	}	
+	button{
+		background-color: gray;
+	}
+</style>
+</head>
+<body bgcolor=red>
+
+	<h1 align='center'>Parking Lot</h1>
+<div class="container">
+	<br><br><br><br>
+	<form class="form-inline">
+	  <div class="form-group">
+	    <label class="sr-only" for="emailInput">Registration Number</label>
+	    <input type="text" class="form-control" id="emailInput" size="30" placeholder="Reg No. & Colour">
+	  </div>
+		<button type="submit" name="Action" value="Park" class="btn btn-default">Park Or Leave</button>
+		</div>	
+	</form>
+	<br>
+	<div id="successAlert" class="alert alert-success" role="alert" style="display:none;"></div>
+	<div id="errorAlert" class="alert alert-danger" role="alert" style="display:none;"></div>
+</div>
+</body>
+</html>
